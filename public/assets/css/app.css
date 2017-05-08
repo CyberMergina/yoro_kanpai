@@ -1,0 +1,126 @@
+@charset "UTF-8";
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 30px;
+  background: #fff;
+  font-family: '游ゴシック Medium', meiryo, sans-serif;
+  font-size: 3rem;
+}
+
+body #wrapper {
+  /*
+      予約確認画面
+    */
+}
+
+body #wrapper > div {
+  display: none;
+}
+
+body #wrapper > div h1 {
+  margin: 0 0 20px;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+body #wrapper .show {
+  display: block;
+}
+
+body #wrapper button {
+  font-size: 3rem;
+}
+
+body #wrapper #reserve-view .alert-info {
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #31708f;
+}
+
+body #wrapper #reserve-view #reserve-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+body #wrapper #reserve-view #reserve-list .item {
+  display: flex;
+  margin: 0;
+  padding: 40px;
+  font-size: 1.8rem;
+  justify-content: space-between;
+}
+
+body #wrapper #reserve-view #reserve-list .item .text {
+  display: flex;
+}
+
+body #wrapper #reserve-view #reserve-list .item .text p {
+  font-size: 2.4rem;
+}
+
+body #wrapper #reserve-view #reserve-list .item .text .name {
+  width: 150px;
+  margin: 0 20px 0 0;
+  font-size: 4rem;
+}
+
+body #wrapper #reserve-view #reserve-list .item .btns button {
+  display: block;
+}
+
+body #wrapper #reserve-view #reserve-list .item .btns .btn-ok {
+  margin: 0 0 30px;
+}
+
+body #wrapper #reserve-view #reserve-list .item + .item {
+  border-top: 1px solid #ddd;
+}
+
+body #wrapper #reserve-view #reserve-list .item.comming {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+body #wrapper #reserve-view #reserve-list .item.comming .alert-danger {
+  border-color: #a94442;
+}
+
+body #wrapper #reserve-view #order-window {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+body #wrapper #reserve-view #order-window.show {
+  display: flex;
+}
+
+body #wrapper #reserve-view #order-window .inner {
+  width: 80%;
+  min-height: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+body #wrapper .pager {
+  display: none;
+  justify-content: space-between;
+}
+
+body #wrapper .pager .page > div {
+  display: flex;
+}
+
+body #wrapper .pager button {
+  font-size: 2.4rem;
+}
